@@ -1,23 +1,22 @@
-#How to setup your game for DMICade
-Your game **must** be exported as an executable file for Linux .
+# How to setup your game for DMI-CADE
+Your game **must** be exported as an executable file for Linux.
 
-First download [Game Template](https://github.com/JanP2ER/DMICade-game-template).
+First download [Game Template](https://github.com/DMI-CADE/game-template).
 
 Note that Game Templates JSON files are uncommented to keep JSON valid.
 
-Rename folder as your games title
+Rename folder as your games title.
 
-##Configure your Application
+## Configure your Application
 
 ```
 {
-    "_preview_dir": "/PreviewMedia/", 	//path to your preview media folder
     "type": "executable",		//leave this as is
     "exe": "dmiCade_devTests.x86_64" 	//name of your executable file
 }
 ```
 
-##Setup your preview
+## Setup your preview
 Paste your preview pictures and/or videos into the "PreviewMedia"-folder.
 
 Remove <> on placeholders ;)
@@ -25,7 +24,7 @@ Remove <> on placeholders ;)
 Logo should be 16:9 and about 720p resolution.
 ```
 {
-	"displayName": "YourAppsName",  			//Name displayed on top of UI above prview content
+	"displayName": "Your Apps Name",  			//Name displayed on top of UI above prview content
 	"gameFormats": ["vs", "1p", "coop"], 			//Choose as many modes as your game supports
 	
     "logo": "logo.png",						//Logo shown in game roster
