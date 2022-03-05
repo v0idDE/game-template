@@ -1,13 +1,41 @@
-# How to setup your game for DMI-CADE
-Your game **must** be exported as an executable file for Linux.
+# How To Setup Your Game For DMI-CADE
 
-First download [Game Template](https://github.com/DMI-CADE/game-template).
+Thank you for beeing interested in contributing your application to the DMI-CADE System!
 
-Note that Game Templates JSON files are uncommented to keep JSON valid.
+This guide will help you setup your exported application for a seamless integration into the system.
 
-Rename folder as your games title.
+### Export
 
-## Configure your Application
+Your game **must** be exported as a 64-bit executable program file for Linux (e.g. `My_Game.x86_64`).
+For more information take a look at the [Export-Guide](https://github.com/DMI-CADE/game-template/wiki/Export-Guide).
+
+### Setting Up Your Directories
+
+You can setup the directories yourself or download the [Game Template](https://github.com/DMI-CADE/game-template) and edit it.
+
+## The Root Folder
+
+The name of the root folder is used internaly as an ID to handle your application. Rename the folder (`game-template`) to your apps title preferably **in kebab-case (dash-case)**.
+
+E.g.: `my-awesome-game`
+
+The folder contains at least three entries:
+
+```
+📂 my-awesome-game
+ ┣ 📂 PreviewMedia
+ ┣ 📜 config.json
+ ┣ 🎮 My_Game.x86_64
+ ┗ ...
+```
+
+- `PreviewMedia`: Contains all the preview elements.
+- `config.json`: Specifies how the system interacts with your application.
+- `My_Game.x86_64`: The file required to run your app.
+
+If your application needs additional files and/or directories to run (e.g. other files generated when exporting like `.pck` or the unity player) also drop them in here, next to your executable.
+
+### Configure your Application
 
 ```
 {
