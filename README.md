@@ -35,14 +35,19 @@ The folder contains at least three entries:
 
 If your application needs additional files and/or directories to run (e.g. other files generated when exporting like `.pck` or the unity player) also drop them in here, next to your executable.
 
-### Configure your Application
+### Configure Your Application
 
-```
+The `config.json` file contains information on how your app is handled. Adjust the contents accordingly:
+
+```json
 {
-    "type": "executable",		//leave this as is
-    "exe": "dmiCade_devTests.x86_64" 	//name of your executable file
+    "type": "executable",
+    "exe": "My_Game.x86_64"
 }
 ```
+- `type`: The type of application. Leave as is.
+- `exe`: The file name of the executable. This must be exact name of the file inside the root folder that runs the app.
+- (RBG Color config comming soon...)
 
 ## Setup your preview
 Paste your preview pictures and/or videos into the "PreviewMedia"-folder.
