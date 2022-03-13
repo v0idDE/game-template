@@ -79,4 +79,5 @@ Game formats:
  - `vs`: Players can play against each other.
  - `1p`: Your game can be played solo.
  - `coop`: The players can cooperate and play against non-player characters.
+ 
  You can choose as many of the game formats, as your game supports. 
