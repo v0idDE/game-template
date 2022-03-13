@@ -75,9 +75,9 @@ Logo should be 16:9 and about 720p resolution.
 }
 ```
 
-Game formats:
+Game modes:
  - `vs`: Players can play against each other.
  - `1p`: Your game can be played solo.
  - `coop`: The players can cooperate and play against non-player characters.
- 
- You can choose as many of the game formats, as your game supports. 
+
+ You can choose as many of the game modes, as your game supports. 
