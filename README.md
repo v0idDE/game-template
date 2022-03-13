@@ -51,6 +51,7 @@ The `config.json` file contains information on how your app is handled. Adjust t
 
 ## Setup your preview
 Paste your preview pictures and/or videos into the "PreviewMedia"-folder.
+Your logo should be a PNG to be displayed correctly. 
 
 Remove <> on placeholders ;)
 
@@ -73,3 +74,10 @@ Logo should be 16:9 and about 720p resolution.
 	"moreInfoText": 	"<MORE_INFO>"			//Text displayed in the "More Info"-Box 
 }
 ```
+
+
+Game formats:
+ - `vs`
+ - `1p`
+ - `coop`
+
