@@ -51,6 +51,7 @@ The `config.json` file contains information on how your app is handled. Adjust t
 
 ## Setup your preview
 Paste your preview pictures and/or videos into the "PreviewMedia"-folder.
+Your logo should be a PNG to be displayed correctly. 
 
 Remove <> on placeholders ;)
 
@@ -73,3 +74,10 @@ Logo should be 16:9 and about 720p resolution.
 	"moreInfoText": 	"<MORE_INFO>"			//Text displayed in the "More Info"-Box 
 }
 ```
+
+Game modes:
+ - `vs`: Players can play against each other.
+ - `1p`: Your game can be played solo.
+ - `coop`: The players can cooperate and play against non-player characters.
+
+ You can choose as many of the game modes, as your game supports. 
