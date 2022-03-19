@@ -53,31 +53,40 @@ The `config.json` file contains information on how your app is handled. Adjust t
 Paste your preview pictures and/or videos into the "PreviewMedia"-folder.
 Your logo should be a PNG to be displayed correctly. 
 
-Remove <> on placeholders ;)
-
 Logo should be 16:9 and about 720p resolution.
-```
+```json
 {
-	"displayName": "Your Apps Name",  			//Name displayed on top of UI above prview content
-	"gameFormats": ["vs", "1p", "coop"], 			//Choose as many modes as your game supports
-	
-    "logo": "logo.png",						//Logo shown in game roster
-    "images": ["pic1.png", "pic2.jpg", "pic3.png"],		//All of your preview images in your PreviewMedia-folder
-    "videos": ["trailer.mp4"],					//Your gameplay trailer in your PreviewMedia-folder
-    
-	"genre": 		"<GENRE>",			//Genre of your game
-	"developer":		"FirstDev,			//Your names
-	 			SecondDev, 
-	 			ThirdDev, 
-	 			Forthdev", 				
-	"release": 		"12.34.5678",			//Release date (optional)
-	"moreInfoText": 	"<MORE_INFO>"			//Text displayed in the "More Info"-Box 
+    "displayName": "Your Apps Name",
+    "gameFormats": ["vs", "1p", "coop"],
+
+    "logo": "logo.png",
+
+    "images": ["pic1.png", "pic2.jpg", "pic3.png"],
+    "videos": ["trailer.mp4"],
+
+    "info1": ["Genre", "TheGenre"],
+    "info2": ["Course", "TheCourse WS00"],
+    "info3": ["Developers", "First Name, Second Name, Third Name"],
+    "info4": ["", ""],
+
+    "moreInfoText":"In this game you engage in an artificial conflict, defined by rules, that results in a quantifiable outcome. We created it under these circumstances. This is how we came up with the idea. This more other cool information."
 }
 ```
+
+//Name displayed on top of UI above prview content.
+//Choose as many modes as your game supports
+//Logo shown in game roster
+//All of your preview images in your PreviewMedia-folder
+//Your gameplay trailer in your PreviewMedia-folder
+//Genre of your game
+//Your names
+//Release date (optional)
+//Text displayed in the "More Info"-Box 
+
 
 Game modes:
  - `vs`: Players can play against each other.
  - `1p`: Your game can be played solo.
  - `coop`: The players can cooperate and play against non-player characters.
 
- You can choose as many of the game modes, as your game supports. 
+ You can choose as many of the game modes, as your game supports.
