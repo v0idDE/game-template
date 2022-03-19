@@ -66,7 +66,7 @@ Logo should be 16:9 and about 720p resolution.
 
     "info1": ["Genre", "TheGenre"],
     "info2": ["Course", "TheCourse WS00"],
-    "info3": ["Developers", "First Name, Second Name, Third Name"],
+    "info3": ["Creators", "First Name, Second Name, Third Name"],
     "info4": ["", ""],
 
     "moreInfoText":"In this game you engage in an artificial conflict, defined by rules, that results in a quantifiable outcome. We created it under these circumstances. This is how we came up with the idea. This more other cool information."
