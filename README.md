@@ -4,6 +4,18 @@ Thank you for beeing interested in contributing your application to the DMI-CADE
 
 This guide will help you setup your exported application for a seamless integration into the system.
 
+## Game Adjustments
+
+If you just start developing your game or if you're already done and want to set it up, either way there are some things you need to keep in mind and configure before exporting.
+
+### Inputs
+
+(WIP)
+
+### Menu Navigation
+
+(WIP)
+
 ### Export
 
 Your game **must** be exported as a 64-bit executable program file for Linux (e.g. `My_Game.x86_64`).
@@ -15,7 +27,7 @@ You can setup the directories yourself or download the [Game Template](https://g
 
 ## The Root Folder
 
-The name of the root folder is used internaly as an ID to handle your application. Rename the folder (`game-template`) to your apps title preferably **in kebab-case (dash-case)**.
+The name of the root folder is used internally as an ID to handle your application. Rename the folder (`game-template`) to your apps title preferably **in kebab-case (dash-case)**.
 
 E.g.: `my-awesome-game`
 
@@ -43,6 +55,7 @@ The `config.json` file contains information on how your app is handled. Adjust t
 {
     "type": "executable",
     "exe": "My_Game.x86_64"
+    "buttonColors": {}
 }
 ```
 - `type`: The type of application. Leave as is.
@@ -69,7 +82,7 @@ Logo should be 16:9 and about 720p resolution.
     "info3": ["Creators", "First Name, Second Name, Third Name"],
     "info4": ["", ""],
 
-    "moreInfoText":"In this game you engage in an artificial conflict, defined by rules, that results in a quantifiable outcome. We created it under these circumstances. This is how we came up with the idea. This more other cool information."
+    "moreInfoText": "In this game you engage in an artificial conflict, defined by rules, that results in a quantifiable outcome. We created it under these circumstances. This is how we came up with the idea. This is more other cool information."
 }
 ```
 
