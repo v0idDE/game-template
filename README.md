@@ -1,32 +1,28 @@
 # How To Setup Your Game For DMI-CADE
-
 Thank you for beeing interested in contributing your application to the DMI-CADE System!
 
 This guide will help you setup your exported application for a seamless integration into the system.
 
 ## Game Adjustments
-
 If you just start developing your game or if you're already done and want to set it up, either way there are some things you need to keep in mind and configure before exporting.
 
 ### Inputs
+- Input Mapping: (WIP)
+- Menu Navigation: If your game has a menu (e.g. for game mode selection or pausing) keep in mind that it must be controllable with the [available Inputs]() i.e. with keyboard inputs.
+- Mouse Cursor: Since the DMI-CADE does not use mouse inputs but is build on Ubuntu, in the current systems version a pointer will be visible if your application does not hide it. It is recommended that your game hides the mouse cursor.
 
-(WIP)
-
-### Menu Navigation
-
-(WIP)
+### Fullscreen
+Your application must run in fullscreen mode when started.
 
 ### Export
 
 Your game **must** be exported as a 64-bit executable program file for Linux (e.g. `My_Game.x86_64`).
-For more information take a look at the [Export-Guide](https://github.com/DMI-CADE/game-template/wiki/Export-Guide).
+For more information take a look at the [Export-Guide (WIP)](https://github.com/DMI-CADE/game-template/wiki/Export-Guide).
 
-### Setting Up Your Directories
-
+## Directory Setup
 You can setup the directories yourself or download the [Game Template](https://github.com/DMI-CADE/game-template) and edit it.
 
-## The Root Folder
-
+### The Root Folder
 The name of the root folder is used internally as an ID to handle your application. Rename the folder (`game-template`) to your apps title preferably **in kebab-case (dash-case)**.
 
 E.g.: `my-awesome-game`
@@ -48,7 +44,6 @@ The folder contains at least three entries:
 If your application needs additional files and/or directories to run (e.g. other files generated when exporting like `.pck` or the unity player) also drop them in here, next to your executable.
 
 ### Configure Your Application
-
 The `config.json` file contains information on how your app is handled. Adjust the contents accordingly:
 
 ```json
@@ -60,9 +55,11 @@ The `config.json` file contains information on how your app is handled. Adjust t
 ```
 - `type`: The type of application. Leave as is.
 - `exe`: The file name of the executable. This must be exact name of the file inside the root folder that runs the app.
-- (RBG Color config comming soon...)
+- `buttonColors`: (WIP)
 
 ## Setup your preview
+(WIP)
+
 Paste your preview pictures and/or videos into the "PreviewMedia"-folder.
 Your logo should be a PNG to be displayed correctly. 
 
