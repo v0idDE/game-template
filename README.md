@@ -72,7 +72,7 @@ Logo should be 16:9 and about 720p resolution.
     "logo": "logo.png",
 
     "images": ["pic1.png", "pic2.jpg", "pic3.png"],
-    "videos": ["trailer.mp4"],
+    "videos": ["trailer.webm"],
 
     "info1": ["Genre", "TheGenre"],
     "info2": ["Course", "TheCourse WS00"],
@@ -93,6 +93,7 @@ Logo should be 16:9 and about 720p resolution.
 //Release date (optional)
 //Text displayed in the "More Info"-Box 
 
+- `videos`: The exact file name of all preview videos present in your preview folder. Note that the videos can only be displayed when exportet as `.webm` using the `VP8` compression format with `Vorbis` audio compression (even though the audio is muted when previewed in the UI). You can find a short guide on how to convert a video file to this format [here](https://github.com/DMI-CADE/game-template/wiki/Covert-Video-To-Displayable-Format).
 
 Game modes:
  - `vs`: Players can play against each other.
