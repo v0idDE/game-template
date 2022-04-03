@@ -48,12 +48,12 @@ The `config.json` file contains information on how your app is handled. Adjust t
 
 ```json
 {
-    "type": "executable",
+    "type": "unity",
     "exe": "My_Game.x86_64"
     "buttonColors": {}
 }
 ```
-- `type`: The type of application. Leave as is.
+- `type`: The type of application. Available options: `unity`, `godot`, `executable`. If your game uses an engine or the like that is not listed, use `executable`.
 - `exe`: The file name of the executable. This must be exact name of the file inside the root folder that runs the app.
 - `buttonColors`: (WIP)
 
