@@ -1,6 +1,6 @@
 {
     "displayName": "My Awesome Game",
-    "gameFormats": ["vs", "1p"],
+    "gameFormats": ["1p", "coop"],
 
     "logo": "gamelogo.png",
 
