@@ -7,8 +7,8 @@
     "images": ["pic1.jpg", "pic2.png"],
     "videos": ["GameTrailer.webm"],
 
-    "info1": ["Genre", "Best-Genre"],
-    "info2": ["Course", "Gamemaking WS00"],
+    "info1": ["Genre", "TheGenre"],
+    "info2": ["Course", "TheCourse WS20/21"],
     "info3": ["Creators", "First Name, Second Name, Third Name"],
     "info4": ["", ""],
 
