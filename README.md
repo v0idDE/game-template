@@ -58,16 +58,17 @@ The `config.json` file contains information on how your app is handled. Adjust t
 - `buttonColors`: (WIP)
 
 ## Setup your preview
-(WIP)
 
-Paste your preview pictures and/or videos into the "PreviewMedia"-folder.
-Your logo should be a PNG to be displayed correctly. 
+(WIP) (about `📂 PreviewMedia` contents)
 
-Logo should be 16:9 and about 720p resolution.
+### Configure Your Preview
+
+The `preview_config.json` file configures how your preview is displayed in the UI.
+
 ```json
 {
-    "displayName": "Your Apps Name",
-    "gameFormats": ["vs", "1p", "coop"],
+    "displayName": "The Apps Name",
+    "gameFormats": ["1p", "coop"],
 
     "logo": "logo.png",
 
@@ -75,29 +76,22 @@ Logo should be 16:9 and about 720p resolution.
     "videos": ["trailer.webm"],
 
     "info1": ["Genre", "TheGenre"],
-    "info2": ["Course", "TheCourse WS00"],
+    "info2": ["Course", "TheCourse WS20/21"],
     "info3": ["Creators", "First Name, Second Name, Third Name"],
     "info4": ["", ""],
 
-    "moreInfoText": "In this game you engage in an artificial conflict, defined by rules, that results in a quantifiable outcome. We created it under these circumstances. This is how we came up with the idea. This is more other cool information."
+    "moreInfoText": "In this game you engage in an artificial conflict, defined by rules, that results in a quantifiable outcome.\n\nWe created it under these circumstances. This is how we came up with the idea.\n\nThis is more other cool information."
 }
 ```
 
-//Name displayed on top of UI above prview content.
-//Choose as many modes as your game supports
-//Logo shown in game roster
-//All of your preview images in your PreviewMedia-folder
-//Your gameplay trailer in your PreviewMedia-folder
-//Genre of your game
-//Your names
-//Release date (optional)
-//Text displayed in the "More Info"-Box 
-
+- `displayName`: The display name of the game.
+- `gameFormats`: The play modes your game supports. <br> Available options: `vs`: Players can play against each other, `1p`: A player can play alone, `coop`: Players can cooperate with each other.
+- `logo` (WIP)
+- `images`: The exact file names of all preview images present. Try to use `.png` or `.jpg` formats. The images get displayed in the preview window as a dia show after any configured video(s) played.
 - `videos`: The exact file name of all preview videos present in your preview folder. Note that the videos can only be displayed when exportet as `.webm` using the `VP8` compression format with `Vorbis` audio compression (even though the audio is muted when previewed in the UI). You can find a short guide on how to convert a video file to this format [here](https://github.com/DMI-CADE/game-template/wiki/Covert-Video-To-Displayable-Format).
-
-Game modes:
- - `vs`: Players can play against each other.
- - `1p`: Your game can be played solo.
- - `coop`: The players can cooperate and play against non-player characters.
-
- You can choose as many of the game modes, as your game supports.
+- `info1` - `info4` (optional but recommended): String pairs containing short information about the game, displayed below the image/video preview. The first string of each pair is displayed on the left, as a descriptor. The second string is the information itself displayed next to it on the right.
+<br>The  discriptor is shortened to 10 characters. (I.e. `Mylongdescriptor` becomes `Mylongdesc:`, `Creators` becomes `Creators:`)
+<br>The actual information (i.e. the second strings) combined have 80 characters in total, but they break lines automatically. Every line is 16 characters long. So try to keep the information short.
+<br> We recommend to use these fields to give information that is interesting to the players. Let them know from which context (e.g. course, lecture or game jam) the game comes. Give yourself credit as creators/developers by displaying your names or nicknames. Let them know in which semester the game was released/created.
+<br>If you only need 2 or 3 info fields, leave the rest out or empty.
+- `moreInfoText` (optional): More info text desplayed in the additional info panel. Put more information, background, instructions and credits here. Use `\n` for line breakes.
