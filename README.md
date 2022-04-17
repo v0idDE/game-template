@@ -61,7 +61,7 @@ The `config.json` file contains information on how your app is handled. Adjust t
 
 (WIP) (about `📂 PreviewMedia` contents)
 
-The contents of this folder determine how a game is previewed in the UI. It must at least contain the `preview_config.json` file and a logo image. Additionally we recommend that you add a visual preview i.e. videos and/or images and short information about the game. As we see it a gameplay video is the best and quickest way to communicate to the user what your game is about.
+The contents of this folder determine how a game is previewed in the UI. It must at least contain the `preview_config.json` file and a logo image. Additionally we recommend that you add a visual preview i.e. videos and/or images and short information about the game. From our experience a gameplay video is the best and quickest way to communicate to the user what your game is about.
 
 All preview files go directly into this folder. What each image/video is used for will be configured in the `preview_config.json` file.
 
@@ -114,7 +114,7 @@ The `preview_config.json` file configures how your preview is displayed in the U
 - `gameFormats`: The play modes your game supports. <br> Available options: `vs`: Players can play against each other, `1p`: A player can play alone, `coop`: Players can cooperate with each other.
 - `logo` (WIP)
 - `images`: The exact file names of all preview images present. Try to use `.png` or `.jpg` formats. The images get displayed in the preview window as a dia show after any configured video(s) played.
-- `videos`: The exact file name of all preview videos present in your preview folder. Note the [requirements for preview videos](https://github.com/DMI-CADE/game-template#videos).
+- `videos`: The exact file name of all preview videos present in your preview folder. Note the [requirements for preview videos](#videos).
 - `info1` - `info4` (optional but recommended): String pairs containing short information about the game, displayed below the image/video preview. The first string of each pair is displayed on the left, as a descriptor. The second string is the information itself displayed next to it on the right.
 <br>The  discriptor is shortened to 10 characters. (I.e. `Mylongdescriptor` becomes `Mylongdesc:`, `Creators` becomes `Creators:`)
 <br>The actual information (i.e. the second strings) combined have 96 characters in total, but they break lines automatically. There are 6 lines available, each 16 characters long. So try to keep the information short.
