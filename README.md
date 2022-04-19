@@ -1,5 +1,5 @@
 # How To Setup Your Game For DMI-CADE
-Thank you for beeing interested in contributing your application to the DMI-CADE System!
+Thank you for being interested in contributing your application to the DMI-CADE System!
 
 This guide will help you setup your exported application for a seamless integration into the system.
 
@@ -66,26 +66,24 @@ The contents of this folder determine how a game is previewed in the UI. It must
 All preview files go directly into this folder. What each image/video is used for will be configured in the `preview_config.json` file.
 
 ### Images
+Use jpg or png as image formats, other formats need testing.
 
-(WIP)
-- jpg, png work, other need to be tested
-- when alpha channel is used keep in mind that images are rendered on a black background
-- preview images are displayed in small window so no need for high resolution
+#### Preview Images
+The preview images are displayed in a small section of the info panel as a slide show. They will get auto fitted into the preview space on a black background.
+Use images of ingame screenshots or artwork to preview your game.
 
 #### The Logo
+The logo is an important part of the preview. It is used as a selection element and functions as a visual queue to find a game quickly in the catalog.
+The logo should be readable on a dark background. We encourage you to use transparency around the image so the user can get a glimpse of what is next in the selection. (Export as .png with alpha channel enabled.) Aim for a resolution at about 1080p. The aspect ratio is up to you, the logo will get auto fitted and placed in the center of the available area.
 
-(WIP)
-- most important image -> first thing players generally see of your game; lets them recognize and quickly fin in selection again
-- should be readable on dark background
-- should be recognizable so user can quickly spot it while scrolling
-- recommended to use the alpha channel (transparency) so player can get a glimps of the next logo while scrolling
-- resolution should be higher then 720p to look nice
-- will auto fitted into certain area (add area preview picture)
+(Image)
+
+As a simple logo idea: Write the name of your game in a font that is already used in your game and combine it with an image of a core asset, e.g. the player character. A quick image search for "arcade game logos" will give you more inspiration.
 
 ### Videos
-When creating a preview video (e.g. recording gameplay) keep in mind that the video will be displayed in a rather small window. Don't worry to much about high resolution. Try to keep the filesize reasonable, 30 seconds of gameplay sould suffice in most cases. Preview videos play without sound.
+When creating a preview video (e.g. recording gameplay) keep in mind that the video will be displayed in a rather small window. Don't worry too much about high resolution. Try to keep the file size reasonable, 30 seconds of gameplay should suffice in most cases. Preview videos play without sound.
 
-Note that videos can only be displayed when exportet as `.webm` using the `VP8` compression format with `Vorbis` audio compression (even though the audio is muted when previewed in the UI). You can find a short guide on how to convert a video file to this format [here](https://github.com/DMI-CADE/game-template/wiki/Covert-Video-To-Displayable-Format).
+Note that videos can only be displayed when exported as `.webm` using the `VP8` compression format with `Vorbis` audio compression (even though the audio is muted when previewed in the UI). You can find a short guide on how to convert a video file to this format [here](https://github.com/DMI-CADE/game-template/wiki/Covert-Video-To-Displayable-Format).
 
 ### Configure Your Preview
 
@@ -116,11 +114,11 @@ The `preview_config.json` file configures how your preview is displayed in the U
 - `images`: The exact file names of all preview images present. Try to use `.png` or `.jpg` formats. The images get displayed in the preview window as a dia show after any configured video(s) played.
 - `videos`: The exact file name of all preview videos present in your preview folder. Note the [requirements for preview videos](#videos).
 - `info1` - `info4` (optional but recommended): String pairs containing short information about the game, displayed below the image/video preview. The first string of each pair is displayed on the left, as a descriptor. The second string is the information itself displayed next to it on the right.
-<br>The  discriptor is shortened to 10 characters. (I.e. `Mylongdescriptor` becomes `Mylongdesc:`, `Creators` becomes `Creators:`)
+<br>The  descriptor is shortened to 10 characters. (I.e. `Mylongdescriptor` becomes `Mylongdesc:`, `Creators` becomes `Creators:`)
 <br>The actual information (i.e. the second strings) combined have 96 characters in total, but they break lines automatically. There are 6 lines available, each 16 characters long. So try to keep the information short.
-<br> We recommend to use these fields to give information that is interesting to the players. Let them know from which context (e.g. course, lecture or game jam) the game comes. Give yourself credit as creators/developers by displaying your names or nicknames. Let them know in which semester the game was released/created.
+<br> We recommend using these fields to give information that is interesting to the players. Let them know from which context (e.g. course, lecture or game jam) the game comes. Give yourself credit as creators/developers by displaying your names or nicknames. Let them know in which semester the game was released/created.
 <br>If you only need 2 or 3 info fields, leave the rest out or empty.
-- `moreInfoText` (optional): More info text desplayed in the additional info panel. Put more information, background, instructions and credits here. Use `\n` for line breaks.
+- `moreInfoText` (optional): More info text displayed in the additional info panel. Put more information, background, instructions and credits here. Use `\n` for line breaks.
 
 ## Your almost done!
 
