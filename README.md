@@ -7,7 +7,8 @@ This guide will help you setup your exported application for a seamless integrat
 If you just start developing your game or if you're already done and want to set it up, either way there are some things you need to keep in mind and configure before exporting.
 
 ### Inputs
-- Input Mapping: (WIP)
+- Input Mapping: The DMI-CADE uses a keyboard encoder to register inputs. Each button or joystick press is equivalent to pressing a button on the keyboard. For your game to be playable on the system, it should use these button mappings: <details><summary><ins>Click To Expand</ins></summary><p>![keymappings-visual](https://user-images.githubusercontent.com/43704691/164091979-716a03a4-9953-43c9-adf7-71561710b010.jpg)</p></details> (Written form [here](../../wiki/Input-Mapping))
+
 - Menu Navigation: If your game has a menu (e.g. for game mode selection or pausing) keep in mind that it must be controllable with the [available Inputs]() i.e. with keyboard inputs.
 - Mouse Cursor: Since the DMI-CADE does not use mouse inputs but is build on Ubuntu, in the current systems version a pointer will be visible if your application does not hide it. It is recommended that your game hides the mouse cursor.
 
