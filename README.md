@@ -50,15 +50,26 @@ The `config.json` file contains information on how your app is handled. Adjust t
 {
     "type": "unity",
     "exe": "My_Game.x86_64"
-    "buttonColors": {}
+    "buttonColors": {
+        "P1A": "FF0", "P1B": "70D", "P1D": "0F0", "P1Start": true,
+        "P2A": "FF0", "P2B": "70D", "P2D": "0F0"
+    }
 }
 ```
 - `type`: The type of application. Available options: `unity`, `godot`, `executable`. If your game uses an engine or the like that is not listed, use `executable`.
 - `exe`: The file name of the executable. This must be exact name of the file inside the root folder that runs the app.
-- `buttonColors`: (WIP)
+- `buttonColors`: An object defining which buttons light up while the game is running. **Use the button color config to display to the player which buttons do something in your game.** When left out, the default colors are used (all white). Keep in mind that the colors will probably be off a bit when used as RGB LED values, some in person adjustment might be necessary.
+The following keys are available:
+    <br>Hex values: `ALL`, `P1A`, `P1B`, `P1C`, `P1D`, `P1E`, `P1F`, `P2A`, `P2B`, `P2C`, `P2D`, `P2E`, `P2F`
+    <br>Boolean values: `P1Start`, `P2Start`, `P1Coin`, `P2Coin`
+  -  Hex values are represented as strings with 3 or 6 letters representing a hex color code (e.g. `"2FA"` will expand to `"22FFAA"`).
+  -  Boolean values represent the on and off state of the button LED. All boolean values are set to false/turned off by default.
+  - `P1A` - `P1F` and `P2A` - `P2F` set the color of the individual player buttons.
+  - The `ALL` keyword sets the color for all player buttons as a base, any further color data overwrites the base color. <br>(I.e. if `{"ALL": "F00", "P2A": "00F"}` is given, all buttons will light up red except the Player-2-A-Button which will light up blue.) When any color data is specified every non specified button is turned off, only use `ALL` when all buttons are required to play the game.
+  - `P1Start` and `P2Start` represent the start button LEDs.
+  - `P1Coin` and `P2Coin` represent the coin button LEDs at the base of the machine.
 
 ## Setup your preview
-
 The contents of this folder determine how a game is previewed in the UI. It must at least contain the `preview_config.json` file and a logo image. Additionally we recommend that you add a visual preview i.e. videos and/or images and short information about the game. From our experience a gameplay video is the best and quickest way to communicate to the user what your game is about.
 
 All preview files go directly into this folder. What each image/video is used for will be configured in the `preview_config.json` file.
