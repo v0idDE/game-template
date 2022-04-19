@@ -118,7 +118,7 @@ The `preview_config.json` file configures how your preview is displayed in the U
 <br>The actual information (i.e. the second strings) combined have 96 characters in total, but they break lines automatically. There are 6 lines available, each 16 characters long. So try to keep the information short.
 <br> We recommend using these fields to give information that is interesting to the players. Let them know from which context (e.g. course, lecture or game jam) the game comes. Give yourself credit as creators/developers by displaying your names or nicknames. Let them know in which semester the game was released/created.
 <br>If you only need 2 or 3 info fields, leave the rest out or empty.
-- `moreInfoText` (optional): More info text displayed in the additional info panel. Put more information, background, instructions and credits here. Use `\n` for line breaks.
+- `moreInfoText` (optional): More info text displayed in the additional info panel. Put more information, background, instructions and credits here. Use `\n` for line breaks. The 'more info panel' has 960 characters available with 20 lines, 48 characters per line and auto line break.
 
 The [preview config found in the template](my-awesome-game/PreviewMedia/preview_config.json) would look like this: (While circling through preview media: video>pic1>pic2>video>...)
 
