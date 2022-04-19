@@ -59,8 +59,6 @@ The `config.json` file contains information on how your app is handled. Adjust t
 
 ## Setup your preview
 
-(WIP) (about `📂 PreviewMedia` contents)
-
 The contents of this folder determine how a game is previewed in the UI. It must at least contain the `preview_config.json` file and a logo image. Additionally we recommend that you add a visual preview i.e. videos and/or images and short information about the game. From our experience a gameplay video is the best and quickest way to communicate to the user what your game is about.
 
 All preview files go directly into this folder. What each image/video is used for will be configured in the `preview_config.json` file.
@@ -110,7 +108,7 @@ The `preview_config.json` file configures how your preview is displayed in the U
 
 - `displayName`: The display name of the game.
 - `gameFormats`: The play modes your game supports. <br> Available options: `vs`: Players can play against each other, `1p`: A player can play alone, `coop`: Players can cooperate with each other.
-- `logo` (WIP)
+- `logo`: The exact file name of the logo image.
 - `images`: The exact file names of all preview images present. Try to use `.png` or `.jpg` formats. The images get displayed in the preview window as a dia show after any configured video(s) played.
 - `videos`: The exact file name of all preview videos present in your preview folder. Note the [requirements for preview videos](#videos).
 - `info1` - `info4` (optional but recommended): String pairs containing short information about the game, displayed below the image/video preview. The first string of each pair is displayed on the left, as a descriptor. The second string is the information itself displayed next to it on the right.
