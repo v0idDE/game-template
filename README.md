@@ -51,8 +51,8 @@ The `config.json` file contains information on how your app is handled. Adjust t
     "type": "unity",
     "exe": "My_Game.x86_64"
     "buttonColors": {
-        "P1A": "FF0", "P1B": "70D", "P1D": "0F0", "P1Start": true,
-        "P2A": "FF0", "P2B": "70D", "P2D": "0F0"
+        "P1A": "FF0", "P1B": "90F", "P1D": "0F0", "P1Start": true,
+        "P2A": "FF0", "P2B": "90F", "P2D": "0F0"
     }
 }
 ```
@@ -62,7 +62,7 @@ The `config.json` file contains information on how your app is handled. Adjust t
 The following keys are available:
     <br>Hex values: `ALL`, `P1A`, `P1B`, `P1C`, `P1D`, `P1E`, `P1F`, `P2A`, `P2B`, `P2C`, `P2D`, `P2E`, `P2F`
     <br>Boolean values: `P1Start`, `P2Start`, `P1Coin`, `P2Coin`
-  -  Hex values are represented as strings with 3 or 6 letters representing a hex color code (e.g. `"2FA"` will expand to `"22FFAA"`).
+  -  Hex values are represented as strings with 3 or 6 characters representing a hex color code (e.g. `"2FA"` will expand to `"22FFAA"`).
   -  Boolean values represent the on and off state of the button LED. All boolean values are set to false/turned off by default.
   - `P1A` - `P1F` and `P2A` - `P2F` set the color of the individual player buttons.
   - The `ALL` keyword sets the color for all player buttons as a base, any further color data overwrites the base color. <br>(I.e. if `{"ALL": "F00", "P2A": "00F"}` is given, all buttons will light up red except the Player-2-A-Button which will light up blue.) When any color data is specified every non specified button is turned off, only use `ALL` when all buttons are required to play the game.
