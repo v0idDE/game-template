@@ -120,6 +120,10 @@ The `preview_config.json` file configures how your preview is displayed in the U
 <br>If you only need 2 or 3 info fields, leave the rest out or empty.
 - `moreInfoText` (optional): More info text displayed in the additional info panel. Put more information, background, instructions and credits here. Use `\n` for line breaks.
 
+The [preview config found in the template](my-awesome-game/PreviewMedia/preview_config.json) would look like this: (While circling through preview media: video>pic1>pic2>video>...)
+
+![image](https://user-images.githubusercontent.com/43704691/164061421-9b18174a-e4f4-4fb4-a66a-7b38f2151d81.png)
+
 ## Your almost done!
 
 (WIP)
