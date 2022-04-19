@@ -74,9 +74,9 @@ Use images of ingame screenshots or artwork to preview your game.
 
 #### The Logo
 The logo is an important part of the preview. It is used as a selection element and functions as a visual queue to find a game quickly in the catalog.
-The logo should be readable on a dark background. We encourage you to use transparency around the image so the user can get a glimpse of what is next in the selection. (Export as .png with alpha channel enabled.) Aim for a resolution at about 1080p. The aspect ratio is up to you, the logo will get auto fitted and placed in the center of the available area.
+The logo should be readable on a dark background. We encourage you to use transparency around the image so the user can get a glimpse of what is next in the selection. (Export as .png with alpha channel enabled.) Aim for a resolution around 1080p. The logo image will scale to the largest possible size fitting in the center of the 20:9 logo area.
 
-(Image)
+<img src="https://user-images.githubusercontent.com/43704691/164060174-cf549c8e-2f6f-4717-b279-727da08074ee.png" width=50%>
 
 As a simple logo idea: Write the name of your game in a font that is already used in your game and combine it with an image of a core asset, e.g. the player character. A quick image search for "arcade game logos" will give you more inspiration.
 
