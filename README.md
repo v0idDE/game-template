@@ -9,14 +9,17 @@ If you just start developing your game or if you're already done and want to set
 ### Inputs
 - Input Mapping: The DMI-CADE uses a keyboard encoder to register inputs. Each button or joystick press is equivalent to pressing a button on the keyboard. For your game to be playable on the system, it should use these button mappings: <details><summary><ins>Click To Expand</ins></summary><p>![keymappings-visual](https://user-images.githubusercontent.com/43704691/164091979-716a03a4-9953-43c9-adf7-71561710b010.jpg)</p></details> (Written form [here](../../wiki/Input-Mapping))
 
-- Menu Navigation: If your game has a menu (e.g. for game mode selection or pausing) keep in mind that it must be controllable with the [available Inputs]() i.e. with keyboard inputs.
+- Menu Navigation: If your game has a menu (e.g. for game mode selection or pausing) keep in mind that it must be controllable with the [available Inputs](../../wiki/Input-Mapping) i.e. with keyboard inputs.
 - Mouse Cursor: Since the DMI-CADE does not use mouse inputs but is build on Ubuntu, in the current systems version a pointer will be visible if your application does not hide it. It is recommended that your game hides the mouse cursor.
 
 ### Fullscreen
 Your application must run in fullscreen mode when started.
 
-### Export
+### Options
+The DMI-CADE can quickly launch and close many different games. We expect the interaction time to be within the timeframe of a break, i.e. 10-30min. The user should not be required to adjust settings before playing.<br>
+If you have an option menu **we would request you not to expose any graphics options to the player**.<br> We would advise you to use fixed values for volume and button mappings.<br> We recommend presenting options that effect the gameplay (e.g. difficulty, input layouts or the like), when navigating to the gameplay rather than in a separate options menu.
 
+### Export
 Your game **must** be exported as a 64-bit executable program file for Linux (e.g. `My_Game.x86_64`).
 For more information take a look at the [Export-Guide (WIP)](https://github.com/DMI-CADE/game-template/wiki/Export-Guide).
 
