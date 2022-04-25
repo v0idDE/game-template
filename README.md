@@ -125,7 +125,7 @@ The `preview_config.json` file configures how your preview is displayed in the U
 - `gameFormats`: The play modes your game supports. <br> Available options: `vs`: Players can play against each other, `1p`: A player can play alone, `coop`: Players can cooperate with each other.
 - `logo`: The exact file name of the logo image.
 - `images`: The exact file names of all preview images present. Try to use `.png` or `.jpg` formats. The images get displayed in the preview window as a dia show after any configured video(s) played.
-- `videos`: The exact file name of all preview videos present in your preview folder. Note the [requirements for preview videos](#videos).
+- `videos`: The exact file names of all preview videos present in your preview folder. Note the [requirements for preview videos](#videos).
 - `info1` - `info4` (optional but recommended): String pairs containing short information about the game, displayed below the image/video preview. The first string of each pair is displayed on the left, as a descriptor. The second string is the information itself displayed next to it on the right.
 <br>The  descriptor is shortened to 10 characters. (I.e. `Mylongdescriptor` becomes `Mylongdesc:`, `Creators` becomes `Creators:`)
 <br>The actual information (i.e. the second strings) combined have 96 characters in total, but they break lines automatically. There are 6 lines available, each 16 characters long. So try to keep the information short.
@@ -133,7 +133,7 @@ The `preview_config.json` file configures how your preview is displayed in the U
 <br>If you only need 2 or 3 info fields, leave the rest out or empty.
 - `moreInfoText` (optional): More info text displayed in the additional info panel. Put more information, background, instructions and credits here. Use `\n` for line breaks. The 'more info panel' has 960 characters available with 20 lines, 48 characters per line and auto line break.
 
-The [preview config found in the template](my-awesome-game/PreviewMedia/preview_config.json) would look like this: (While circling through preview media: video>pic1>pic2>video>...)
+The [preview config found in the template](my-awesome-game/PreviewMedia/preview_config.json) would look like this: (Preview circles through preview media: video>pic1>pic2>video>...)
 
 ![image](https://user-images.githubusercontent.com/43704691/164061421-9b18174a-e4f4-4fb4-a66a-7b38f2151d81.png)
 
