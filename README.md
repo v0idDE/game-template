@@ -74,7 +74,7 @@ The following keys are available:
   - `P1Coin` and `P2Coin` represent the coin button LEDs at the base of the machine.
 
 ## Setup your preview
-The contents of this folder determine how a game is previewed in the UI. It must at least contain the `preview_config.json` file and a logo image. Additionally we recommend that you add a visual preview i.e. videos and/or images and short information about the game. From our experience a gameplay video is the best and quickest way to communicate to the user what your game is about.
+The contents of the `PreviewMedia` folder determine how a game is previewed in the UI. It must at least contain the `preview_config.json` file and a logo image. Additionally we recommend that you add a visual preview i.e. videos and/or images and short information about the game. From our experience a gameplay video is the best and quickest way to communicate to the user what your game is about.
 
 All preview files go directly into this folder. What each image/video is used for will be configured in the `preview_config.json` file.
 
