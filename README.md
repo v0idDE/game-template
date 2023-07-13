@@ -136,7 +136,3 @@ The `preview_config.json` file configures how your preview is displayed in the U
 The [preview config found in the template](my-awesome-game/PreviewMedia/preview_config.json) would look like this: (Preview circles through preview media: video>pic1>pic2>video>...)
 
 ![image](https://user-images.githubusercontent.com/43704691/164061421-9b18174a-e4f4-4fb4-a66a-7b38f2151d81.png)
-
-## Your almost done!
-
-(WIP)
