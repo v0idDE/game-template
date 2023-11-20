@@ -10,7 +10,7 @@ If you just start developing your game or if you're already done and want to set
 - Input Mapping: The DMI-CADE uses a keyboard encoder to register inputs. Each button or joystick press is equivalent to pressing a button on the keyboard. For your game to be playable on the system, it should use these button mappings: <details><summary><ins>Click To Expand</ins></summary><p>![keymappings-visual](https://user-images.githubusercontent.com/43704691/164091979-716a03a4-9953-43c9-adf7-71561710b010.jpg)</p></details> (Written form [here](../../wiki/Input-Mapping))
 
 - Menu Navigation: If your game has a menu (e.g. for game mode selection or pausing) keep in mind that it must be controllable with the [available Inputs](../../wiki/Input-Mapping) i.e. with keyboard inputs.
-- Mouse Cursor: Since the DMI-CADE does not use mouse inputs but is build on Ubuntu, in the current systems version a pointer will be visible if your application does not hide it. It is recommended that your game hides the mouse cursor.
+- Mouse Cursor: Since the DMI-CADE does not use mouse inputs but is build on Ubuntu, in the current system version a pointer will be visible if your application does not hide it. It is recommended that your game hides the mouse cursor.
 
 ### Fullscreen
 Your application must run in fullscreen mode when started.
@@ -21,7 +21,6 @@ If you have an option menu **we would request you not to expose any graphics opt
 
 ### Export
 Your game **must** be exported as a 64-bit executable program file for Linux (e.g. `My_Game.x86_64`).
-For more information take a look at the [Export-Guide (WIP)](https://github.com/DMI-CADE/game-template/wiki/Export-Guide).
 
 ## Directory Setup
 You can setup the directories yourself or download the [Game Template](https://github.com/DMI-CADE/game-template) and edit it.
@@ -136,3 +135,7 @@ The `preview_config.json` file configures how your preview is displayed in the U
 The [preview config found in the template](my-awesome-game/PreviewMedia/preview_config.json) would look like this: (Preview circles through preview media: video>pic1>pic2>video>...)
 
 ![image](https://user-images.githubusercontent.com/43704691/164061421-9b18174a-e4f4-4fb4-a66a-7b38f2151d81.png)
+
+## You're almost done!
+
+Now that you configured your game for the DMI-CADE, if you haven't already, get in touch with us on the DMI-CADE Discord Server (Linked on the [FSR Medien Website](https://fsr-medien.de/unser-angebot/arcade-dmi-cade/)) to submit your build. We're looking forward to host your game!
