@@ -52,7 +52,7 @@ The `config.json` file contains information on how your app is handled. Adjust t
 ```json
 {
     "type": "unity",
-    "exe": "My_Game.x86_64"
+    "exe": "My_Game.x86_64",
     "buttonColors": {
         "P1A": "FF0", "P1B": "90F", "P1D": "0F0", "P1Start": true,
         "P2A": "FF0", "P2B": "90F", "P2D": "0F0"
